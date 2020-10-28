@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Unsere Tiere im Zoo stellen sich vor">
+  <title>Herzlich Willkommen</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/stil.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul id="oben">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="info.html">Infos</a></li>
+        <li><a href="kontakt.html" class="aktuell">Kontakt</a></li>
+      </ul>
+    </nav>
+    </header>
+    <main>
+<h1>Besucherumfrage:</h1>
+<h3>Liebe Besucher, wir bitten Sie an unserer Umfrage teilzunehmen.</h3> 
+<h3>Bitte füllen Sie folgendes Formular aus:</h3>
+
+<form method="post" action="">
+        <div class="form-group">
+          <label for="inputName">Name:</label>
+          <input name="inputName" required type="text" id="inputName" placeholder="Bitte geben Sie Ihren Namen ein">
+        </div>
+        <div class="form-group">
+          <label for="inputMail">Mailadresse</label>
+          <input name="inputMail" type="email" id="inputMail" placeholder="Bitte geben Sie Ihre Mailadresse ein">
+        </div>
+        <div class="form-group">
+          <label for="inputDate">Besuchstag:</label>
+          <input name="inputDate" type="date" id="inputDate" placeholder="Besuchstag">
+        </div>
+        <div class="form-group">
+          <label for="inputTime">Besuchzeit:</label>
+          <input name="inputTime" type="time" id="inputTime" placeholder="Besuchszeit">
+        </div>
+        <div class="form-group">
+          <label for="inputRange">Hat es Ihnen gefallen?</label>
+          <input name="inputRange" type="range" id="inputRange" placeholder="Hat es Ihnen gefallen?">
+        </div>
+   
+        <div class="form-group">
+          <label for="radio">Weiterempfehlung?</label>
+          <input type="radio" name="radio" id="ja" value="ja">
+          <label for="ja">ja</label>
+          <input type="radio" name="radio" id="nein" value="nein">
+          <label for="nein">nein</label>
+        </div>
+
+        <div class="form-group">
+          <label for="tierauswahl">Lieblingstierart:</label>
+          <input type="text" list="inttiere" name="tierauswahl" id="tierauswahl">
+          <datalist name="tierauswahl" id="inttiere">
+            <option value="Tiger">
+            <option value="Affe">
+            <option value="Panda">
+            <option value="Zebra">
+            <option value="Nashorn">
+            <option value="Bär">
+          </datalist>
+        </div>
+        <div class="form-group">
+          <label for="kommentar">Kommentar:</label>
+          <textarea rows="5" cols="20" name="kommentar" id="kommentar" placeholder="Wir freuen uns über Ihren Kommentar"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="tiere">Besucherinfo:</label>
+          <select name="tiere" id="tiere">
+            <option value="1" selected>Familienausflug</option>
+            <option value="2">Allein unterwegs</option>
+            <option value="3" >Gruppenausflug</option>
+            <option value="4" >Ausflug mit Freunden</option>
+            <option value="5" >was anderes</option>
+          </select>
+        </div>
+        <div class="form-group">
+        <button type="submit">Absenden</button>
+        <button type="reset">Reset</button>
+        </div>
+        </form>
+  <p><blockquote>Danke für die Teilnahme an der Besucherumfrage!</blockquote></p>
+  <p><a href="#oben">nach oben</a></p>
+  </main>
+  <footer>
+    <p id="beate">Beate © 2020</p>
+  </footer>
+</body>
+</html>

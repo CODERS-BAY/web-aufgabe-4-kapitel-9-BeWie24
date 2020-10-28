@@ -1,0 +1,133 @@
+body {
+  font-size: 120%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.4;
+  color: #000000;
+  background-color: #ffffcc;
+  margin: 0;
+}
+ h1 {
+  font-size: 3rem;
+  font-weight: normal;
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+}
+h2 {
+  text-align: center;
+}
+h3 {
+  text-align: center;
+}
+a:link {
+  color: #768F00;
+}
+a:visited {
+  color: #406200;
+}
+a:hover {
+  background-color: #BCE46F;
+}
+:target {   /*target: interner Link (Ziel) wird nach dem Klicken gekennzeichnet z.B. "nach oben"*/
+  background-color: #749D27;
+}
+q::before {   /*Einfügen eines Icons vor einem Text*/
+  content: url("../img/pawprint1.png");
+}
+q::after {  /*Einfügen eines Icons nach einem Text*/
+  content: url("../img/pawprint2.png");
+}
+p#beate::first-letter  {    /*ZUSAMMENSCHREIBEN: für paragraph mit ID Beate soll der erste Buchstabe markiert sein*/
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+}
+p#beate {   /*ID für Fußnote*/
+  margin-left: 1rem;
+}
+section {
+  text-align: center;
+  display: center;
+}
+nav {
+  background-color: #BFE600;
+}
+nav ul {
+  margin: 0;
+  display: flex;
+  list-style: none;
+}
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  display: block;
+  padding: 0.8rem;
+}
+nav a.aktuell {
+  font-weight: bold;
+}
+main {
+  max-width: 62rem;
+  margin: auto;
+  display: block;
+}
+article {
+  width: 100%;
+  margin: 0 2rem;
+}
+footer {
+  background-color: #BFE600;
+  color: #ffffff;
+  padding: 0.5rem;
+ }
+img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+@media screen and (max-width: 530px) {
+  main {
+    display: block;
+  }
+} 
+.form-group {
+  display: flex;
+}
+.form-group > * {
+  flex-basis: 50%;
+  margin: 15px;
+  padding: 5px;
+}
+label {
+  text-align: right;
+}
+
+input[type="radio"] { /* Leider schaffe ich es nicht das Input Radio zu formatieren... :-( */
+  background-color: red; /*als Test hier mal rot angegeben*/
+  color: red; /*als Test hier mal rot angebeben*/
+}
+button { 
+  color: #fff;
+  background-color: #406200;	
+  width: 150px;
+  height: 30px;
+  position: center;
+}
+table {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 2rem;
+}
+td {
+  border: 1px solid black;
+}
+th {
+  background-color: #BCE46F;
+}
+tr:nth-child(2n) {
+  background-color: #768F00;
+}
+blockquote {
+  text-align: center;
+}
+
